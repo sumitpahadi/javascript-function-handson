@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container1"> 
+        <div class="heading">Function Handson</div>
+    </div>
+
+    <hr>
+    <div class="container2">
+
+
+        <h2> Question1=>Create one function with zero parameter having a console statement</h2>
+        <br>
+        <pre>
+            function abc()
+            {
+                console.log("my name is sumit")
+            }
+        </pre>
+        <hr>
+        <h2>Question 2=>Create one function which takes two values as a parameter and print the sum of them as "Sum of 3, 4 is 7"</h2>
+        <br>
+        <pre>
+            function abc(a,b){
+                console.log(a+b);
+            }
+            abc(3,7)
+        </pre>
+        <h4>output=>10</h4>
+        <hr>
+
+        <h2>Question 3=>Create one arrow function</h2>
+        <br>
+        <pre>
+            const abc=(()=>{
+                console.log("hey my name is sumit rawat")
+              })
+              
+              abc()
+        </pre>
+        <h4>Output=> hey my name is sumit rawat</h4>
+        <hr>
+        <h3>
+            <pre>
+    Question 4=> print the output
+    "Print output: 
+    var x = 21;
+    var girl = function () {
+    console.log(x);
+    var x = 20;
+    };
+
+    girl ();"
+        </pre>
+    </h3>
+
+        <h4>Output=>undefined</h4>
+        <hr>
+
+
+        <h3>
+            <pre>
+    Question 5=>
+     "Print output: 
+     var x = 21;
+     girl ();
+     console.log(x)
+     function girl() {
+     console.log(x);
+     var x = 20;
+    }; 
+</pre>
+        </h3>
+
+        <h4>Output => undefined
+            <br>
+            21
+        </h4>
+
+        <hr>
+        <h3>
+
+            <pre>
+    Question 6=>
+    "Print output
+
+    var x = 21;
+    a();
+    b();
+
+    function a() {
+    
+     x = 20;
+    console.log(x);
+   };
+   function b() {
+    
+    x = 40;
+    console.log(x);
+};"
+            </pre>
+        </h3>
+        <h4>
+            Output=> 20
+            <br> 40
+        </h4>
+        <hr>
+
+<h2> Question 8=> Write a function that accepts parameter n and returns factorial of n</h2>
+<br>
+<pre>
+    function abc(n) {
+        let result = 1;
+      
+        for (let i = 1; i <= n; i++) {
+          result *= i;
+        }
+      
+        return result;
+    }
+    console.log(abc(3))
+</pre>
+
+<h4>
+    output=>6
+</h4>
+<hr>
+
+
+    </div>
+
+    <div class="container2">
+        <div class="heading2">
+            Function handson day2
+        </div>
+    </div>
+    <br>
+    <hr>
+
+    <div class="container3">
+       <h4>
+        <pre>
+        Question 1=>\
+
+        Guess the Output
+
+        function FindSum(a, b){
+           return a + b;
+         }
+
+         function DisplayData(data, batch){
+          console.log(`i am from ${data} and My batch is EA${batch}`)
+          }
+
+         DisplayData(""PrepBytes"", FindSum(10, 9));"
+        </pre>
+       </h4>
+       <br>
+       <h4>
+        Output=> i am from prepbytes and My batch is EA19
+       </h4>
+  <hr>
+
+  <h3>
+    <pre>
+        Question 2=>
+        "Guess the output
+
+        Abc();
+        const Abc = function(){
+        let value = 20;
+        console.log(value);
+         }"
+    </pre>
+    </h3>
+    <br>
+    <h4>
+
+        output => ReferenceError: Cannot access 'Abc' before initialization
+        
+    </h4>
+  <hr>
+  <h3>
+    <pre>
+        Question 3=>
+        "Guess the output
+
+        var a = 10;
+        (function (){
+        console.log(a);
+        var a = 20;
+       })();"
+    </pre>
+  </h3>
+  <br>
+  <h4>
+    Output=>undefined
+  </h4>
+  <hr>
+  <h3>
+    <pre>
+        Question 4=>
+        "Guess the Output
+        const greet =  function(name){
+        return function(m){
+    
+        console.log(`Hi!! ${name}, ${m}`);
+       }
+       }
+  
+       const greet_message = greet('EA19');
+      greet_message(""Welcome To PrepBytes"")"
+    </pre>
+  </h3>
+
+  <br>
+  <h4>
+    Output=>  Hi!! EA19, Welcome To PrepBytes
+  </h4>
+
+    </div>
+</body>
+</html>
